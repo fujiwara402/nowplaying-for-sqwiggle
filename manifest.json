@@ -1,0 +1,20 @@
+{
+ "name":"Now Playing Song For Sqwiggle",
+ "version":"0.1",
+ "description":"YouTubeで聞いてる曲をSqwiggleの一言欄でシェアするやつ",
+ "content_scripts": [
+  {
+   "matches": ["https://app.sqwiggle.com/*"],
+   "js": ["jquery.min.js","content.js"],
+   "run_at":"document_end"
+  }
+ ],
+ "browser_action": {
+  "name": "click to rewrite form actions"
+ },
+ "permissions":[
+  "tabs",
+  "https://app.sqwiggle.com/*"
+ ],
+ "manifest_version":2
+}
